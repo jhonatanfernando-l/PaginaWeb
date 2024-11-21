@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/StyleCuentas/Style.css">
+    <link rel="stylesheet" href="../CSS/cabecera.css">
+    <link rel="stylesheet" href="../CSS/pie.css">
+    <Script src="../JS/JsCuentas/Script.js"></Script>
+
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">CONTACTOS</h2>
+        <nav class="navigation">
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="ventas.html">Ventas</a>
+            <a href="Cuentas.html">Ventas</a>
+            
+        </nav>
+    </header>
+    <center>
+    <fieldset>
+        <legend>Practica de Diseño WEB</legend>
+
+        <form action="">
+            <table border="1">
+                <!--Nombre-->
+                <tr>
+                    <td>Nombre:</td>
+                    <td>
+                        <input type="text" value="Ingrese Texto" id="Nombre">
+                    </td>
+                    <!--CIUDAD-->
+                    <td>Ciudad</td>
+                    <td>
+                        <select id="Departamento" >
+                            <option>LaPaz</option>
+                            <option>Oruro</option>
+                            <option>Cochabamba</option>
+                            <option>Chuquisaca</option>
+                            <option>SantaCruz</option>
+                            <option>Pando</option>
+                            <option>Tarija</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!--CONTRASEÑA-->
+                <tr>
+                    <td>Contraseña:</td>
+                    <td>
+                        <input type="password" id="Contraseña">
+                    </td>
+                </tr>
+
+                <!--GENERO-->
+                <tr>
+                    <td>Genero:</td>
+                    <td>
+                        <label for="">Masculino</label>
+                        <input type="radio" name="Genero" value="M">
+
+                        <label for="">Femenino</label>
+                        <input type="radio" name="Genero" value="F">
+                    </td>
+                </tr>
+                <!--NACIMIENTO-->
+                <tr>
+                    <td>Fecha de Nacimiento:</td>
+                    <td>
+                        <input type="date" id="Fecha">
+                    </td>
+                </tr>
+                <!--CELULAR-->
+                <tr>
+                    <td>Celular:</td>
+                    <td>
+                        <input type="number" id="Numero" >
+                    </td>
+                </tr>
+                <!--DIRECCION-->
+                <tr>
+                    <td>Direccion:</td>
+                    <td>
+                        <input type="text" id="Direccion" > 
+                    </td>
+                </tr>
+                                                             
+            </table>
+
+            <br><br><br>
+
+            <input type="button" value="Generar Plan de pagos" onclick="Formulario()">
+        </form>
+    </fieldset>
+
+        <br><br>
+
+        <legend><b>TABLA DE REGISTROS</b></legend> 
+
+                <!--Seccion de tabla-->
+                <TABLE border="1" hei>
+                    <thead>
+                        <th>Nro.</th>
+                        <th>Nombre</th>
+                        <th>Contraseña</th>
+                        <th>Genero</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Celular</th>
+                        <th>Ciudad</th>
+                        <th>Direccion</th>
+                        <th>Bono</th>
+                        <th>Sueldo</th>
+                    </thead>
+
+                    <tbody id="tablaPagos">
+
+                    </tbody>
+                </TABLE>
+    
+</center>
+    
+    
+</body>
+</html>

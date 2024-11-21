@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/cabecera.css">
+    <link rel="stylesheet" href="CSS/pie.css">
+    <title>Proyecto JS</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">PROYECTO</h2>
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="PAGES/nosotros.html">Nosotros</a>
+            <a href="PAGES/Cuentas.html">Cuentas</a>
+            <a href="PAGES/ventas.html">Ventas</a>
+            <button class="btnLogin">Login</button>
+        </nav>
+    </header>
+
+    <div class="content-login">
+        <div class="form-login login">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="usu" required>
+                    <label for="usuario">Usuario</label>
+                </div>
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="contra" required>
+                    <label for="password">Contraseña</label>
+                </div>
+                <button type="submit" class="btn" onclick="inicioSesion()">Ingresar</button>
+                <div class="login-register">
+                    <p>¿No tienes cuenta?
+                        <a href="#" class="register-link">Regístrate</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-login register">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <h2>Nuevo Registro</h2>
+            <form action="#">
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="people-sharp"></ion-icon></span>
+                    <input type="text" id="fullname" required>
+                    <label for="fullname">Nombre Completo</label>
+                </div>
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="password" id="new-password" required>
+                    <label for="new-password">Contraseña</label>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <div class="login-register">
+                    <p>¿Ya tienes cuenta?
+                        <a href="#" class="login-link">Inicia Sesión</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="JS/usuarios.js"></script>
+</body>
+</html>

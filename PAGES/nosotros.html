@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Align-items</title>
+    
+    <link rel="stylesheet" href="../CSS/StyleNosotros/style.css">
+    
+    <link rel="stylesheet" href="../CSS/pie.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">NOSOTROS</h2>
+        <nav class="navigation">
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="ventas.html">Ventas</a>
+            <a href="Cuentas.html">Cuentas</a>
+            <button class="btnLogin">Login</button>
+        </nav>
+    </header>
+    <h2>PROPIEDAD ALIGN-ITEM</h2>
+
+    <p>
+        La propiedad align-items actua sobre el eje vertical.
+        Para utilizar esta propiedad primero se deben definir 
+        la propiedad <em>(flex-direccion: row)</em>.<br><br>
+        <b>VALORES DE LA PROPIEDAD:</b><br><br>
+
+        <b>[]-Stretch</b> Los elementos se amplian verticalmente para ocupar 
+        toda la altura disponible en el contenedor. valor por defecto.<br>
+        <b>[]-Flex-Start:</b> Los elementos se colocan en la parte suerior 
+        del contenedor.<br>
+        <b>[]-Flex-end:</b> Los elementos se colocan en la parte inferior 
+        del contenedor.<br>
+        <b>[]-Center:</b> Los elemento sse colocan en el centro del 
+        contenedor.<br>
+        <b>[]-Baseline:</b> Los elementos se alinean sobre al linea de 
+        base de texto.<br>
+    </p>
+    <h2>ALIGN-ITEMS: STRETCH</h2>
+    <DIV CLASS="Stretch-container">
+        <div class="item1">1</div> 
+        <div class="item1">2</div> 
+        <div class="item1">3</div> 
+        <div class="item1">4</div> 
+        <div class="item1">5</div> 
+    </DIV>
+
+    <h2>ALIGN-ITEMS: Flex-Start</h2>
+    <DIV CLASS="Flex-Start">
+        <div class="item2">1</div> 
+        <div class="item2">2</div> 
+        <div class="item2">3</div> 
+        <div class="item2">4</div> 
+        <div class="item2">5</div> 
+    </DIV>
+
+    <h2>ALIGN-ITEMS: Flex-end</h2>
+    <DIV CLASS="Flex-end">
+        <div class="item3">1</div> 
+        <div class="item3">2</div> 
+        <div class="item3">3</div> 
+        <div class="item3">4</div> 
+        <div class="item3">5</div> 
+    </DIV>
+
+    <h2>ALIGN-ITEMS: Center</h2>
+    <DIV CLASS="center">
+        <div class="item4">1</div> 
+        <div class="item4">2</div> 
+        <div class="item4">3</div> 
+        <div class="item4">4</div> 
+        <div class="item4">5</div> 
+    </DIV>
+
+    <h2>ALIGN-ITEM: Baseline-container</h2>
+    <div class="Baseline-container">
+        <div class="item5"><h3>1</h3></div> 
+        <div class="item5">2</div> 
+        <div class="item5"><h3>3</h3></div> 
+        <div class="item5">4</div> 
+        <div class="item5"><h3>5</h3></div> 
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;/*quitar para que la imagen cubra todo o #000a sustituir por black*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+
+.btnLogin{
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid mediumslateblue;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.btnLogin:hover{
+    background: darkorchid;
+    color: black;
+}
+
+
+
+.Stretch-container{
+    border: 3px rgb(30, 0, 163) solid;
+    /*Los elementos pueden cambiar de tamaño*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    /*Para que se note el strech se coloca */
+    height: 250px;
+
+}
+.item1{
+    /*Solo ocupara el alto y se acomodara al contenedor (alto)*/
+    width: 70px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 2px;
+    font-family: Impact;
+    line-height: 200px;
+}
+
+.Flex-Start{
+    border: 3px rgb(30, 0, 163) solid;
+    /*Los elementos pueden cambiar de tamaño*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    /*Para que se note el strech se coloca */
+    height: 250px;
+
+}
+.item2{
+    /*Solo ocupara el alto y se acomodara al contenedor (alto)*/
+    width: 70px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 2px;
+    font-family: Impact;
+    line-height: 50px;
+}
+
+.Flex-end{
+    border: 3px rgb(30, 0, 163) solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 250px;
+
+}
+.item3{
+    width: 70px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 2px;
+    font-family: Impact;
+    line-height: 50px;
+}
+
+.center{
+    border: 3px rgb(30, 0, 163) solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 250px;
+
+}
+.item4{
+    width: 70px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 2px;
+    font-family: Impact;
+    line-height: 50px;
+}
+.Baseline-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    height: 250px;
+    border: 5px double darkblue;
+}
+.item5{
+    width: 70px;
+    /*al usar la propiedad de vaseline se puede usar un alto*/
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 10px;
+    margin: 10px;
+    padding: 2px;
+    font-size: 20px;
+    font-family: verdana;
+}
+.item5 h3{
+    background-color: azure;
+    color: blue;
+
+}
+
